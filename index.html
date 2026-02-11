@@ -1,364 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BackWood's Project - Погрузись в мир выживания</title>
-    <link rel="stylesheet" href="styles.new.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <div class="site-background"></div>
-    <div class="site-overlay"></div>
-    <div class="background-overlay"></div>
-    
-    <header class="header">
-        <div class="header-content">
-            <nav class="main-nav">
-                <a href="#server" class="nav-link">Особенности</a>
-                <a href="#servers" class="nav-link">Сервера</a>
-                <a href="file:///f:/DayzWorkSpace/BackWoodsDayzNew/community.html" id="communityLink" class="nav-link">Сообщество</a>
-                <a href="#connect" class="nav-link cta-link">Присоединиться</a>
-                <div class="nav-divider"></div>
-                <div class="nav-social-media">
-                    <a href="https://discord.gg/c5mfmYxYwr" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        <span class="social-label">Discord</span>
-                    </a>
-                    <a href="https://vk.com/bwdayz" target="_blank">
-                        <i class="fab fa-vk"></i>
-                        <span class="social-label">VK</span>
-                    </a>
-                    <a href="https://boosty.to/bwproject" target="_blank">
-                        <i class="fas fa-heart"></i>
-                        <span class="social-label">Boosty</span>
-                    </a>
-                    <a href="https://wargm.ru/server/74329" target="_blank">
-                        <i class="fas fa-gamepad"></i>
-                        <span class="social-label">Wargm</span>
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-title">
-                        <h1>BackWood's</h1>
-                        <h2>Project</h2>
-                    </div>
-                    <div class="hero-description">
-                        <p>Погрузись в мир выживания</p>
-                        <div class="hero-buttons">
-                            <a href="#connect" class="hero-btn primary">Начать игру</a>
-                            <a href="#" id="communityButton" class="hero-btn secondary">Присоединиться к сообществу</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-overlay"></div>
-        </section>
-
-        <section id="server" class="server-features">
-            <div class="section-wrapper">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Уникальный Геймплей</h2>
-                        <p>Погрузись в мир выживания с особым подходом</p>
-                    </div>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <i class="fas fa-puzzle-piece"></i>
-                            <h3>Кастомные Моды</h3>
-                            <p>Расширенная механика выживания и уникальный геймплей</p>
-                        </div>
-                        <div class="feature-card">
-                            <i class="fas fa-users"></i>
-                            <h3>Активное Сообщество</h3>
-                            <p>Дружелюбные игроки и поддержка администрации</p>
-                        </div>
-                        <div class="feature-card">
-                            <i class="fas fa-server"></i>
-                            <h3>Стабильная Инфраструктура</h3>
-                            <p>Надежные сервера с минимальными задержками</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="servers" class="mods-section">
-            <div class="section-header">
-                <h2>Выбери Свой Путь</h2>
-                <p>Каждый сервер - уникальный опыт выживания</p>
-            </div>
-            <div id="servers" class="minimal-status">
-                <div class="status-wrapper">
-                    <div class="minimal-container">
-                        <div class="server-title">
-                            <h3>[RU] BackWood's: Livonia Vanilla+|PvP|3PP</h3>
-                        </div>
-                        <div class="minimal-info">
-                            <span class="minimal-label">Статус</span>
-                            <span class="minimal-value active">Активен</span>
-                        </div>
-                        <div class="minimal-divider"></div>
-                        <div class="minimal-info">
-                            <span class="minimal-label">Игроки</span>
-                            <span class="minimal-value">0/60</span>
-                        </div>
-                        <div class="minimal-buttons">
-                            <button class="minimal-btn">Правила</button>
-                        </div>
-                    </div>
-                    <div class="server-preview">
-                        <div class="server-image">
-                            <img src="images/server-preview.png" alt="Server Preview" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="status-wrapper in-development">
-                    <div class="development-badge">
-                        <span>В разработке</span>
-                    </div>
-                    <div class="minimal-container">
-                        <div class="server-title">
-                            <h3>[RU] BackWood's Stalker Survival</h3>
-                        </div>
-                        <div class="minimal-info">
-                            <span class="minimal-label">Статус</span>
-                            <span class="minimal-value development">В разработке</span>
-                        </div>
-                        <div class="minimal-divider"></div>
-                        <div class="minimal-info">
-                            <span class="minimal-label">Дата запуска</span>
-                            <span class="minimal-value">Скоро</span>
-                        </div>
-                        <div class="minimal-buttons">
-                            <button class="minimal-btn" disabled>Правила</button>
-                        </div>
-                    </div>
-                    <div class="server-preview">
-                        <div class="server-image">
-                            <img src="images/server-preview-namalsk.png" alt="Stalker Server Preview" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="status-wrapper in-development">
-                    <div class="development-badge">
-                        <span>В разработке</span>
-                    </div>
-                    <div class="minimal-container">
-                        <div class="server-title">
-                            <h3>[RU] BackWood's PVE</h3>
-                        </div>
-                        <div class="minimal-info">
-                            <span class="minimal-label">Статус</span>
-                            <span class="minimal-value development">В разработке</span>
-                        </div>
-                        <div class="minimal-divider"></div>
-                        <div class="minimal-info">
-                            <span class="minimal-label">Дата запуска</span>
-                            <span class="minimal-value">Скоро</span>
-                        </div>
-                        <div class="minimal-buttons">
-                            <button class="minimal-btn" disabled>Правила</button>
-                        </div>
-                    </div>
-                    <div class="server-preview">
-                        <div class="server-image">
-                            <img src="images/server-preview-chernarus.png" alt="PVE Server Preview" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="connect" class="connect-section">
-            <div class="section-wrapper">
-                <div class="container">
-                    <div class="connect-container">
-                        <div class="connect-content">
-                            <h2>Начни Играть Сейчас</h2>
-                            <div class="servers-container">
-                                <div class="server-ip-box">
-                                    <div class="ip-container">
-                                        <div class="server-details">
-                                            <div class="server-name">[RU] BackWood's: Livonia Vanilla+|PvP|3PP</div>
-                                            <div class="server-connection-info">
-                                                <div class="server-ip">
-                                                    <span class="label">IP:</span>
-                                                    <span class="value" id="serverIpValue">backwoods.dayz.su</span>
-                                                    <button class="copy-btn small-copy-btn" data-copy-target="serverIpValue">
-                                                        <i class="fas fa-copy"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="server-port">
-                                                    <span class="label">Порт:</span>
-                                                    <span class="value" id="serverPortValue">2302</span>
-                                                    <button class="copy-btn small-copy-btn" data-copy-target="serverPortValue">
-                                                        <i class="fas fa-copy"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="server-ip-box in-development">
-                                    <div class="ip-container">
-                                        <div class="server-details">
-                                            <div class="server-name">[RU] BackWood's Stalker Survival</div>
-                                            <div class="server-connection-info">
-                                                <div class="server-ip">
-                                                    <span class="label">IP:</span>
-                                                    <span class="value" id="serverIpValueStalker">stalker.backwoods.dayz.su</span>
-                                                    <button class="copy-btn small-copy-btn" data-copy-target="serverIpValueStalker">
-                                                        <i class="fas fa-copy"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="server-port">
-                                                    <span class="label">Порт:</span>
-                                                    <span class="value" id="serverPortValueStalker">2303</span>
-                                                    <button class="copy-btn small-copy-btn" data-copy-target="serverPortValueStalker">
-                                                        <i class="fas fa-copy"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="server-ip-box in-development">
-                                    <div class="ip-container">
-                                        <div class="server-details">
-                                            <div class="server-name">[RU] BackWood's PVE</div>
-                                            <div class="server-connection-info">
-                                                <div class="server-ip">
-                                                    <span class="label">IP:</span>
-                                                    <span class="value" id="serverIpValuePve">pve.backwoods.dayz.su</span>
-                                                    <button class="copy-btn small-copy-btn" data-copy-target="serverIpValuePve">
-                                                        <i class="fas fa-copy"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="server-port">
-                                                    <span class="label">Порт:</span>
-                                                    <span class="value" id="serverPortValuePve">2302</span>
-                                                    <button class="copy-btn small-copy-btn" data-copy-target="serverPortValuePve">
-                                                        <i class="fas fa-copy"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="footer-copyright">
-                    <p>&copy; 2024 BackWood's DayZ. Все права защищены.</p>
-                </div>
-            </div>
-            <div class="footer-right">
-                <div class="footer-social">
-                    <a href="https://discord.gg/c5mfmYxYwr" target="_blank" class="footer-social-link" data-tooltip="Мы в Discord">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                    <a href="https://vk.com/bwdayz" target="_blank" class="footer-social-link" data-tooltip="Мы ВКонтакте">
-                        <i class="fab fa-vk"></i>
-                    </a>
-                    <a href="https://boosty.to/bwproject" target="_blank" class="footer-social-link" data-tooltip="Мы на Boosty">
-                        <i class="fas fa-heart"></i>
-                    </a>
-                    <a href="https://wargm.ru/server/74329" target="_blank" class="footer-social-link" data-tooltip="Мы на Wargm">
-                        <i class="fas fa-gamepad"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="pixel-character-runner">
-        <div class="pixel-character"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BaseWars Loading</title>
+    <meta name="description" content="Загрузка на сервер BaseWars" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+      <div class="scan"></div>
+      <div class="grid"></div>
     </div>
 
-    <div id="notification-container"></div>
-    <script>
-        // Обработчик для кнопки сообщества в навигации
-        document.getElementById('communityLink').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = 'community.html';
-        });
+    <main class="wrap">
+      <header class="top">
+        <div class="brand">
+          <div class="logo">BW</div>
+          <div class="brand-text">
+            <span class="brand-title">BaseWars</span>
+            <span class="brand-sub">Garry's Mod</span>
+          </div>
+        </div>
+        <div class="pill">
+          <span class="pill-label">IP</span>
+          <button class="copy" data-copy="217.60.237.15:27016">
+            217.60.237.15:27016
+          </button>
+        </div>
+      </header>
 
-        // Обработчик для кнопки сообщества в hero-секции
-        document.getElementById('communityButton').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = 'community.html';
-        });
+      <section class="stage">
+        <div class="stage-left">
+          <div class="tag">Загрузка</div>
+          <h1>Подключение к серверу</h1>
+          <p class="lead">
+            Инициализируем сессию и подгружаем контент. Останься на экране до
+            завершения.
+          </p>
 
-        function showNotification(message) {
-            const container = document.getElementById('notification-container');
-            const notification = document.createElement('div');
-            notification.className = 'notification';
-            
-            const icon = document.createElement('i');
-            icon.className = 'fas fa-check-circle notification-icon';
-            
-            const text = document.createElement('span');
-            text.textContent = message;
-            
-            notification.appendChild(icon);
-            notification.appendChild(text);
-            container.appendChild(notification);
-            
-            // Анимация появления
-            setTimeout(() => {
-                notification.classList.add('show');
-            }, 100);
-            
-            // Удаление уведомления
-            setTimeout(() => {
-                notification.classList.remove('show');
-                setTimeout(() => {
-                    container.removeChild(notification);
-                }, 300);
-            }, 3000);
-        }
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-label">Режим</span>
+              <span class="stat-value">BaseWars</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Регион</span>
+              <span class="stat-value">RU</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Сервер</span>
+              <span class="stat-value">24/7</span>
+            </div>
+          </div>
+        </div>
 
-        // Обработчики копирования для каждой кнопки
-        document.querySelectorAll('.copy-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const targetId = this.getAttribute('data-copy-target');
-                const target = document.getElementById(targetId);
-                navigator.clipboard.writeText(target.textContent).then(() => {
-                    showNotification('Скопировано');
-                });
-            });
-        });
-    </script>
+        <div class="stage-right">
+          <div class="loader-card">
+            <div class="loader-top">
+              <span class="loader-label">Подготовка ресурсов</span>
+              <span class="loader-percent" id="progressText">0%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-sub" id="progressSub">Инициализация...</div>
+          </div>
 
-    <script src="script.js"></script>
-<!-- VK Messages Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-<script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 227422683, {
-        tooltipButtonText: "Написать",
-        expandTimeout: 0,
-        disableButtonTooltip: false,
-        disableWelcomeScreen: false
-    });
-</script>
-</body>
+          <div class="time-card">
+            <span class="time-label">Местное время</span>
+            <span class="time-value" id="clock">--:--</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span class="footer-text">BaseWars · Build · Raid · Dominate</span>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
 </html>
